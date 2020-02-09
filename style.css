@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.soundboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+header p {
+  font-size: 25px;
+}
+
+.keys {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+.keys > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+.key1 {
+  background: #60d191;
+}
+.key2 {
+  background: #d33030;
+}
+.key3 {
+  background: #c050d3;
+}
+.key4 {
+  background: #d3d250;
+}
+.key5 {
+  background: #603bd5;
+}
+.key6 {
+  background: #60c3d5;
+}
+.key7 {
+  background: #000000;
+}
+
+.mainVisual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
+}
